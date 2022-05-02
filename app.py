@@ -2,7 +2,7 @@ import streamlit as st
 import  pickle
 from typing import List
 
-filename = '../models/rfc_model.pkl'
+filename = './rfc_model.pkl'
 model = pickle.load(open(filename, 'rb'))
 
 def predict_covid_result(sample_input: List[int]) -> str:
